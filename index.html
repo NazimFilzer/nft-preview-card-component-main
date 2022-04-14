@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: hsl(217, 54%, 11%);
+      font-family: 'Outfit', sans-serif;
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+    }
+
+    .plate {
+      display: flex;
+      max-width: 380px;
+      background-color: hsl(216, 50%, 16%);
+      border-radius: 20px;
+      padding: 19px;
+    
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .title {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600;
+      color: white;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 26px;
+      cursor: pointer;
+    }
+    .title:hover{
+      color: cyan;
+    }
+    .para{
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300;
+      font-size: 22px;;
+      color: hsl(215, 51%, 70%);
+      margin-bottom: 20px;
+    }
+
+    .clock{
+      float: right;
+      font-size: 18px;
+      color:  hsl(215, 51%, 70%);
+    }
+    .eth{
+      font-size: 18px;
+      color: hsl(178, 100%, 50%);
+      margin-bottom: 20px;
+    }
+    hr{
+      border-style: solid;
+      border-radius: 5px;
+      height: 1px;
+      color: hsl(215, 32%, 27%);
+      background-color:hsl(215, 32%, 27%) ;
+    }
+
+    .ava{
+      width: 30px;
+      margin-top: 12px;
+      float: left;
+      border: 1.5px solid white;
+      border-radius: 100%;
+    }
+    .jules{
+      cursor: pointer;
+    }
+    .jules:hover{
+      color: cyan
+    }
+    .end{
+      margin-top: 17px;
+      
+    }
+    .create{
+      color: hsl(215, 51%, 70%);
+    }
+
+
+    .attribution {
+      font-size: 15px;
+      text-align: center;
+      position: relative;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="plate">
+      <div class="image">
+        <img src="images/image-equilibrium.jpg" alt="">
+        <h1 class="title">Equilibrium #3429</h1>
+
+        <p class="para">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+
+        <div class="in">
+          <p class="eth">0.041 ETH <img src="images/icon-ethereum.svg" alt=""> <span class="clock"> <img src="images/icon-clock.svg" alt=""> 3 days left</span> </p>
+        </div> 
+        <hr>
+        
+        <img class="ava" src="images/image-avatar.png" alt="">
+        <p class="end">  <span class="create">  &nbsp; &nbsp;Creation of </span>  <span class="jules">Jules Wyvern</span> </p> 
+      </div>
+      
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/NazimFilzer">Nazim Filzer</a>.
+    </div>
+  </div>
+
+
+  
+</body>
+
+</html>
